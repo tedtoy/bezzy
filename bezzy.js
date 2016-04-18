@@ -1,5 +1,5 @@
 /*
- *  Bezzy
+ *  Bezzy - a user intuitive wrapper for the SVG API so you can make nice curving lines.
  *
  *
  **/
@@ -65,8 +65,8 @@ function bezzy(coords){
             : 0;
 
         // Apply translations:
-        //     note: There must be a more mathematically elegant way. 
-        //           If you know - tell me!                            
+        //   * There must be a more mathematically elegant way. 
+        //     If you know - tell me!!                            
         var translateA, translateD;
         if (dx && dy && !dcx){           // 1
             translateA = [ 1, 1];

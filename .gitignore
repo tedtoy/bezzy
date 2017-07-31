@@ -1,0 +1,11 @@
+ve/*
+*.pyc
+node_modules/*
+*.swp
+*.swl
+*.swn
+*.swo
+*.swm
+*.DS_Store
+
+.DS_Store

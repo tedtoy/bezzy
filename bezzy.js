@@ -8,7 +8,7 @@ function bezzy(coords){
 
     var start = coords[0];                      // absolute, pixels
     var end = coords.slice(-1)[0];     // absolute, units of pixels
-    var relative_controls = coords.slice(1,-1); // relative, units of percentage
+    var relative_controls = coords.slice(1,-1); // relative, units in percentage out of 100
 
     // calculate slope variables:
     var rise = -1 * (end[1] - start[1]);
@@ -21,8 +21,7 @@ function bezzy(coords){
     var controlsf = [];
     for (var i = 0; i < relative_controls.length; i++){
         var c = relative_controls[i];
-        
-
+    
         // Triangle A,B,C is a right triangle under the slope of the control intersection.
         // Triangle D,E,F is a right triangle adjacent to the control point itself.
         // G is the coordinate denoted by a distance of % control_y * the length of the total distance
